@@ -1,5 +1,6 @@
 /node_modules/
 /tests-examples/
+/screenshots/
 user.js
 
 .vscode/*
