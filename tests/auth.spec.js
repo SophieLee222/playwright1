@@ -15,7 +15,7 @@ test('valid login test', async ({ page }) => {
     await expect(page).toHaveURL(/netology\.ru\/profile/);
 
     // Проверка контента на странице профиля
-    await expect(page.locator('section')).toContainText('С чего начать?');
+    await expect(page.getByTestId('header-top').getByTestId('header-navigatorBtn')).toBeVisible();
   });
 
   test('invalid login test', async ({ page }) => {
